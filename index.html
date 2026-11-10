@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="بيتزا إيطالية أصيلة بمكونات طازجة وأجواء دافئة. اكتشف قائمة مطعم فورنو واحجز طاولتك اليوم.">
+  <title>فورنو | بيتزا إيطالية أصيلة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#home" aria-label="فورنو - الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>فورنو<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#menu">المنيو</a>
+        <a href="#about">عن المطعم</a>
+        <a class="button button-small nav-reserve" href="#reservation">احجز طاولة</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="eyebrow"><span class="eyebrow-line"></span> مذاق إيطاليا الأصيل</span>
+        <h1>قطعة من إيطاليا<br>في <span>كل قضمة.</span></h1>
+        <p>عجينة طازجة، مكونات مختارة بعناية، ووصفات إيطالية تحكي حكاية شغفنا بالطعام.</p>
+        <div class="hero-actions">
+          <a class="button" href="#menu">اكتشف المنيو <span aria-hidden="true">←</span></a>
+          <a class="button button-outline" href="#reservation">احجز طاولتك</a>
+        </div>
+        <div class="hero-note">
+          <span class="rating-stars" aria-label="تقييم خمس نجوم">★★★★★</span>
+          <span>أحبها أكثر من ٢,٠٠٠ ضيف</span>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#menu" aria-label="انتقل إلى المنيو"><span></span></a>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow eyebrow-dark">من فرننا إليك</span>
+            <h2>أطباقنا <span>الأكثر حباً</span></h2>
+          </div>
+          <p>كل طبق يُحضّر طازجاً عند الطلب، بمكونات بسيطة ونكهة لا تُنسى.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="بيتزا مارغريتا بالريحان الطازج" loading="lazy">
+              <span class="dish-tag">الأكثر طلباً</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-title"><h3>مارغريتا كلاسيك</h3><span class="price">٤٨ <small>ر.س</small></span></div>
+              <p>صلصة طماطم سان مارزانو، موزاريلا طازجة، ريحان وزيت زيتون بكر.</p>
+              <span class="dish-meta"><span aria-hidden="true">◷</span> ١٢–١٥ دقيقة</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="بيتزا بيبروني مخبوزة في فرن حجري" loading="lazy">
+              <span class="dish-tag dish-tag-dark">اختيار الشيف</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-title"><h3>بيبروني فورنو</h3><span class="price">٥٦ <small>ر.س</small></span></div>
+              <p>بيبروني معتّق، مزيج أجبان إيطالية، صلصة البيت الخاصة ورشة أوريغانو.</p>
+              <span class="dish-meta"><span aria-hidden="true">◷</span> ١٢–١٥ دقيقة</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="بيتزا خضار طازجة بألوان شهية" loading="lazy">
+              <span class="dish-tag dish-tag-green">نباتي</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-title"><h3>حديقة توسكانا</h3><span class="price">٥٢ <small>ر.س</small></span></div>
+              <p>فطر طازج، فلفل مشوي، زيتون كالاماتا، جرجير وموزاريلا كريمية.</p>
+              <span class="dish-meta"><span aria-hidden="true">◷</span> ١٢–١٥ دقيقة</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section section" id="about">
+      <div class="container">
+        <div class="features-intro">
+          <span class="eyebrow">حكاية فورنو</span>
+          <h2>السر في <span>التفاصيل.</span></h2>
+          <p>نؤمن أن أفضل الوجبات تبدأ بمكونات صادقة، وتُصنع بحب، وتُشارك مع من نحب.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">🌿</span>
+            <h3>مكونات طازجة</h3>
+            <p>نختار أجود المكونات المحلية والإيطالية كل صباح.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">🔥</span>
+            <h3>من الفرن مباشرة</h3>
+            <p>عجينة تُخمّر ببطء وتُخبز على حرارة عالية بإتقان.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">👨‍🍳</span>
+            <h3>بأيدي خبراء</h3>
+            <p>طهاة شغوفون يضيفون لمستهم إلى كل وصفة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-section section" id="reservation">
+      <div class="container reservation-layout">
+        <div class="reservation-copy">
+          <span class="eyebrow">أهلاً بك دائماً</span>
+          <h2>طاولتك<br><span>في انتظارك.</span></h2>
+          <p>اجمع أحبابك حول مائدة إيطالية دافئة. احجز الآن ودع الباقي علينا.</p>
+          <div class="opening-hours">
+            <span class="hours-icon" aria-hidden="true">◷</span>
+            <div><strong>نحن هنا يومياً</strong><span>١٢:٠٠ ظهراً – ١٢:٠٠ منتصف الليل</span></div>
+          </div>
+        </div>
+
+        <form class="reservation-form" id="reservation-form">
+          <h3>احجز طاولتك</h3>
+          <p>املأ التفاصيل وسنتواصل معك لتأكيد الحجز.</p>
+          <div class="form-grid">
+            <label>
+              الاسم الكامل
+              <input type="text" name="name" placeholder="مثال: سارة أحمد" autocomplete="name" required>
+            </label>
+            <label>
+              رقم الهاتف
+              <input type="tel" name="phone" placeholder="05xxxxxxxx" autocomplete="tel" inputmode="tel" required>
+            </label>
+            <label>
+              عدد الأفراد
+              <select name="guests" required>
+                <option value="" disabled selected>اختر العدد</option>
+                <option value="1">فرد واحد</option>
+                <option value="2">فردان</option>
+                <option value="3">٣ أفراد</option>
+                <option value="4">٤ أفراد</option>
+                <option value="5">٥ أفراد</option>
+                <option value="6">٦ أفراد أو أكثر</option>
+              </select>
+            </label>
+            <label>
+              تاريخ الزيارة
+              <input type="date" name="date" required>
+            </label>
+          </div>
+          <button class="button form-submit" type="submit">أرسل طلب الحجز <span aria-hidden="true">←</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">F</span><span>فورنو<span class="brand-dot">.</span></span></a>
+        <p>نكهة إيطالية أصيلة، تُحضّر بحب وتُشارك بكل سعادة.</p>
+      </div>
+      <div class="footer-hours">
+        <h3>مواعيد العمل</h3>
+        <p>يومياً <span>١٢:٠٠ ظهراً – ١٢:٠٠ منتصف الليل</span></p>
+      </div>
+      <div class="footer-social">
+        <h3>تابع حكايتنا</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="إنستغرام">ig</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك">f</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="تيك توك">♪</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="current-year"></span> فورنو. جميع الحقوق محفوظة.</span>
+      <a href="#home">العودة للأعلى ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
